@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas TECNO3F</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imagenes/3f.jpg" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <a href="https://www.tresdefebrero.gov.ar/tecno3f/" target="_blank"><img class="logo3f" src="imagenes/logo3f.png" alt="logo3f"></a>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#content">Contenido</a></li>
+        <li><a href="#recetas">API</a></li>
+        <li><a href="#form">Formulario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Principal -->
+  
+  <section id="home">
+  <div class="encabezado">
+    <img class="logoreceta" src="imagenes/recetas3f.png" alt="logo recetas 3F">
+    <h2>Bienvenidos a Recetas TECNO3F</h2>
+  </div>
+  <div class="introduction">
+    <p>En nuestro sitio encontrarás una amplia variedad de recetas deliciosas y fáciles de preparar, pensadas para todos los gustos y niveles de cocina. Ya sea que estés buscando platos rápidos para el día a día o recetas más elaboradas para ocasiones especiales, ¡aquí encontrarás la inspiración que necesitas! Nos apasiona la gastronomía y queremos compartir contigo recetas frescas, saludables y sabrosas para que disfrutes cocinando y comiendo. ¡Explora nuestras secciones, prueba nuevas ideas y convierte cada comida en una experiencia única!
+    </p>
+  </div>
+  </section>
+
+  <!-- Sección de Contenido -->
+  <section id="content">
+    <h2>Breve Historia</h2>
+    <p>
+      La cocina tiene una historia fascinante que refleja la evolución de la humanidad. Desde el descubrimiento del fuego hasta la gastronomía moderna, cada etapa de la historia ha dejado una huella en lo que hoy disfrutamos en la mesa.  
+      Las grandes civilizaciones, como los egipcios y romanos, marcaron los inicios de la gastronomía organizada. Con la llegada de la Edad Media, las especias y técnicas de conservación revolucionaron los sabores, y durante el Renacimiento, nuevos ingredientes del Nuevo Mundo transformaron la cocina europea.  
+      En la actualidad, la cocina es una mezcla de tradiciones antiguas y creatividad moderna, donde cada plato cuenta una historia. ¡Explora con nosotros este fascinante viaje culinario!
+   <br><br>   "Cocinar no es solo alimentar el cuerpo, es nutrir el alma con tradiciones e innovación."
+    </p>
+
+    <h3>Consejos de Cocina</h3>
+    <ul id="tips-list">
+      <li data-description="Antes de cocinar, asegúrate de comprender todos los pasos y prepara los ingredientes. Esto evitará sorpresas a mitad del proceso.">Lee toda la receta antes de empezar.</li>
+      <li data-description="Organiza todos los ingredientes y utensilios necesarios antes de cocinar. Tener todo a mano hace que el proceso sea más fluido y evita olvidos.">Organiza tus ingredientes y utensilios (Mise en Place).</li>
+      <li data-description="Un cuchillo afilado es más seguro y eficiente. Facilita cortes precisos y evita accidentes al aplicar demasiada presión.">Afila tus cuchillos para cortes precisos.</li>
+      <li data-description="Cocinar demasiados alimentos a la vez puede generar vapor y evitar que se doren correctamente. Cocina en lotes si es necesario.">No llenes demasiado la sartén para obtener dorados perfectos.</li>
+      <li data-description="Prueba tus preparaciones durante el proceso para ajustar los condimentos. Así garantizas un sabor perfecto.">Prueba tus preparaciones mientras cocinas.</li>
+      <li data-description="Las hierbas frescas como el cilantro, el perejil y la albahaca realzan los sabores. Añádelas al final de la cocción para conservar su aroma.">Usa hierbas frescas al final para un mejor aroma.</li>
+      <li data-description="Precalienta el horno y las sartenes para obtener cocciones uniformes. Usa fuego bajo para guisos y estofados, y alto para sellar carnes.">Controla las temperaturas.</li>
+      <li data-description="Es más fácil añadir sal al final que intentar corregir un exceso. Ajusta gradualmente.">Usa sal con moderación.</li>
+      <li data-description="Mantén el área de trabajo limpia. Lavar utensilios y superficies mientras cocinas te ahorra tiempo al final.">Limpia mientras cocinas.</li>
+      <li data-description="Después de cocinarlas, deja reposar las carnes unos minutos para que los jugos se redistribuyan y queden más jugosas.">Deja reposar las carnes antes de servirlas.</li>
+      <li data-description="La cocina es creatividad. Prueba nuevas combinaciones de ingredientes y técnicas para descubrir sabores únicos.">No tengas miedo de experimentar.</li>
+      <li data-description="Aprende a hacer salsas como la bechamel, la marinara y la salsa de mostaza. Son versátiles y mejoran cualquier plato.">Domina las salsas básicas.</li>
+      <li data-description="Garantiza el punto perfecto en asados y carnes sin cortarlas antes de tiempo.">Usa un termómetro para carnes.</li>
+      <li data-description="Los caldos caseros tienen más sabor y nutrientes. Haz grandes cantidades y congela porciones para usarlas después.">Prepara tus propios caldos</li>
+      <li data-description="La cocina es un espacio para relajarse, ser creativo y compartir momentos con tus seres queridos. ¡Diviértete!">¡Diviértete y experimenta con nuevos sabores!</li>
+    </ul>
+    <div id="description-box" style="display: none;"></div>
+
+  </section>
+  
+<!-- Consumo de API -->
+<section id="recetas">
+  <h2>Recetas</h2>
+  <div id="receta-container">
+    <!-- Las recetas se cargarán aquí -->
+  </div>
+</section>
+
+<!-- Ventana Modal de la API-->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-details">
+      <!-- Los detalles de la receta se cargarán aquí -->
+    </div>
+  </div>
+</div>
+
+<!-- Sección del Formulario -->
+  <section id="form">
+    <h2>Formulario de Contacto</h2>
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
+      <span class="error" id="name-error"></span>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email">
+      <span class="error" id="email-error"></span>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message"></textarea>
+      <span class="error" id="message-error"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="form-feedback"></p>
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Sección de Contacto -->
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: contacto@recetas3f.com</p>
+        <p>Teléfono: +54 11 1234-5678</p>
+        <p>Dirección: Calle de las Recetas, 3F, Buenos Aires</p>
+      </div>
+  
+      <!-- Sección de Redes Sociales -->
+      <div class="footer-section">
+        <h4>Redes Sociales</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://x.com/" target="_blank">X</a></li>
+          <li><a href="https:/www.youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+  
+      <!-- Sección de Información -->
+      <div class="footer-section">
+        <h4>Sobre Nosotros</h4>
+        <p>Recetas 3F es un espacio dedicado a los amantes de la cocina. Aquí encontrarás recetas únicas y consejos prácticos para que disfrutes del arte culinario.</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Recetas 3F. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
