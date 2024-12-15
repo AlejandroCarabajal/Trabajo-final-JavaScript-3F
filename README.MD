@@ -4,7 +4,7 @@ Características principales:
 Interfaz amigable: Diseño claro y organizado.
 Recetas aleatorias: Consulta recetas al azar con datos de una API.
 Formulario de contacto: Los usuarios pueden enviar sugerencias o preguntas.
-Secciones dinámicas: Información sobre la historia de la cocina y consejos útiles.
+Secciones dinámicas: Información sobre la historia de la cocina y consejos útiles. Al pasar el mouse sobre los consejos, aparece una leyenda o descripción agregando información sobre el consejo.
 
 Tecnologías utilizadas:
 HTML5: Estructura del sitio.
