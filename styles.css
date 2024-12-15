@@ -305,3 +305,83 @@ footer {
 .footer-bottom p {
   margin: 0;
 }
+
+
+
+/* RESPONSIVE */
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .encabezado h2 {
+    margin: 10px 0;
+  }
+
+  .logoreceta {
+    width: 7rem;
+  }
+
+  #receta-container {
+    grid-template-columns: 1fr; /* Una columna para móviles */
+  }
+
+  form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #receta-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para tabletas */
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+/* Ajustes generales */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Evita desplazamientos laterales no deseados */
+}
+
+.modal-content {
+  width: 95%;
+  max-width: 400px;
+}
