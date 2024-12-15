@@ -223,6 +223,7 @@ textarea, button {
   background-color: #fff; 
   transition: background-color 0.3s, border 0.3s; 
   border-radius: 5px;
+  box-sizing: border-box;  /* Asegura que padding y borde no afecten el ancho */
 }
 
 form input:focus,
